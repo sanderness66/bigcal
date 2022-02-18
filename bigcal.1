@@ -1,0 +1,37 @@
+.TH bigcal 1 21-JAN-2021 GO
+
+.SH NAME
+bigcal
+
+.SH SYNOPSIS
+.B bigcal
+[[month] year]
+
+.SH DESCRIPTION
+.B bigcal
+produces a monthly calendar just like
+.BR cal ,
+only bigger.
+
+.SH SEE ALSO
+.BR cal (1)
+
+.SH BUGS
+When running
+.B bigcal
+.IR year ,
+it might be more useful if the first day of the next month were
+printed right after the last day of the previous month, producing a
+continuous calendar for the whole year. Currently, it prints all
+months separately from each other.
+
+The
+.B cal
+.I 9 1752
+trick doesn't work as expected with
+.B bigcal
+(go pkg/time design decision).
+
+.SH OWNER
+svm
+
