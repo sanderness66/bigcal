@@ -23,7 +23,7 @@ func main() {
 	case 3:
 		mon, _ = strconv.Atoi(os.Args[1])
 		if mon < 1 || mon > 12 {
-			fmt.Printf("month %d is silly\n", mon)
+			fmt.Printf("month %s is silly\n", os.Args[1])
 			os.Exit(1)
 		}
 		year, _ = strconv.Atoi(os.Args[2])
